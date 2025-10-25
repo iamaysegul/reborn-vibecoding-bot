@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Reborn Bot (Dry Mode)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    },
+    {
+      "name": "Reborn Backtest",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/core/backtest.py",
+      "args": [
+        "--csv",
+        "data/AVAX_1m.csv",
+        "--config",
+        "config.yaml"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

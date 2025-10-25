@@ -1,0 +1,6 @@
+exchange: binanceusdm
+leverage: 5
+max_daily_loss: 0.02
+risk_per_trade: 0.01
+symbol: AVAX/USDT
+timeframe: 1m

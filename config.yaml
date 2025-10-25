@@ -1,0 +1,18 @@
+exchange: binanceusdm
+leverage: 5
+max_daily_loss: 0.02
+risk_per_trade: 0.01
+symbol: AVAX/USDT
+timeframe: 1m
+safety:
+  max_daily_loss_pct: 0.06   # %6
+vibe:
+  calm:
+    risk_mult: 0.8
+    cooldown_s: 15
+  hype:
+    risk_mult: 1.2
+    cooldown_s: 5
+  enter_hype_vol_mult: 1.6
+  exit_hype_vol_mult: 1.0
+

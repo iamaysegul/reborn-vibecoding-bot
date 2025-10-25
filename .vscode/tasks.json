@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create venv & Install",
+      "type": "shell",
+      "command": "python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt",
+      "group": "build"
+    },
+    {
+      "label": "Run Reborn Dry Mode",
+      "type": "shell",
+      "command": "python main.py",
+      "group": "test"
+    },
+    {
+      "label": "Push to GitHub",
+      "type": "shell",
+      "command": "git add . && git commit -m 'update' && git push",
+      "group": "none"
+    }
+  ]
+}
